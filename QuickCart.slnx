@@ -1,0 +1,30 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/QuickCart.Contracts/QuickCart.Contracts.csproj" />
+    <Project Path="src/QuickCart.Web/QuickCart.Web.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Catalog/">
+    <Project Path="src/Modules/Catalog/QuickCart.Catalog.Application/QuickCart.Catalog.Application.csproj" />
+    <Project Path="src/Modules/Catalog/QuickCart.Catalog.Domain/QuickCart.Catalog.Domain.csproj" />
+    <Project Path="src/Modules/Catalog/QuickCart.Catalog.Infrastructure/QuickCart.Catalog.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Inventory/">
+    <Project Path="src/Modules/Inventory/QuickCart.Inventory.Application/QuickCart.Inventory.Application.csproj" />
+    <Project Path="src/Modules/Inventory/QuickCart.Inventory.Domain/QuickCart.Inventory.Domain.csproj" />
+    <Project Path="src/Modules/Inventory/QuickCart.Inventory.Infrastructure/QuickCart.Inventory.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Ordering/">
+    <Project Path="src/Modules/Ordering/QuickCart.Ordering.Application/QuickCart.Ordering.Application.csproj" />
+    <Project Path="src/Modules/Ordering/QuickCart.Ordering.Domain/QuickCart.Ordering.Domain.csproj" />
+    <Project Path="src/Modules/Ordering/QuickCart.Ordering.Infrastructure/QuickCart.Ordering.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Workers/">
+    <Project Path="src/Workers/QuickCart.Notification.Worker/QuickCart.Notification.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/QuickCart.IntegrationTests/QuickCart.IntegrationTests.csproj" />
+    <Project Path="tests/QuickCart.Inventory.UnitTests/QuickCart.Inventory.UnitTests.csproj" />
+    <Project Path="tests/QuickCart.Ordering.UnitTests/QuickCart.Ordering.UnitTests.csproj" />
+  </Folder>
+</Solution>

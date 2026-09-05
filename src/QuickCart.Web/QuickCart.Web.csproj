@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\Catalog\QuickCart.Catalog.Application\QuickCart.Catalog.Application.csproj" />
+    <ProjectReference Include="..\Modules\Catalog\QuickCart.Catalog.Infrastructure\QuickCart.Catalog.Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules\Inventory\QuickCart.Inventory.Application\QuickCart.Inventory.Application.csproj" />
+    <ProjectReference Include="..\Modules\Inventory\QuickCart.Inventory.Infrastructure\QuickCart.Inventory.Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules\Ordering\QuickCart.Ordering.Application\QuickCart.Ordering.Application.csproj" />
+    <ProjectReference Include="..\Modules\Ordering\QuickCart.Ordering.Infrastructure\QuickCart.Ordering.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
