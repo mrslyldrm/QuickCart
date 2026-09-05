@@ -2,5 +2,4 @@
 
 namespace QuickCart.Ordering.Domain.Orders.Events;
 
-public sealed record OrderPlacedDomainEvent(
-    Guid OrderId) : IDomainEvent;
+public sealed record OrderPlacedDomainEvent(Guid OrderId) : IDomainEvent;
