@@ -1,10 +1,13 @@
 using QuickCart.Ordering.Application;
+using QuickCart.Ordering.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddOrderingApplication();
+builder.Services.AddOrderingInfrastructure(builder.Configuration);
+
 builder.Services.AddSingleton(TimeProvider.System);
 
 var app = builder.Build();

@@ -15,7 +15,7 @@ public sealed class PlaceOrderCommandValidatorTests
             new PlaceOrderAddress(
                 "Istanbul",
                 "Sultanbeyli",
-                "Test Street"),
+                "Test Street","34758"),
             [
                 new PlaceOrderItem(
                     Guid.NewGuid(),

@@ -78,12 +78,9 @@ public sealed class PlaceOrderCommandHandler
 
         order.Place(_timeProvider.GetUtcNow());
 
-        await _orderRepository.AddAsync(
-            order,
-            cancellationToken);
+        await _orderRepository.AddAsync(order, cancellationToken);
 
-        await _unitOfWork.SaveChangesAsync(
-            cancellationToken);
+        await _unitOfWork.SaveChangesAsync(cancellationToken);
 
         return order.Id;
     }
