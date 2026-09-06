@@ -1,5 +1,8 @@
+using QuickCart.Catalog.Infrastructure;
 using QuickCart.Ordering.Application;
+using QuickCart.Ordering.Application.Abstractions.Catalog;
 using QuickCart.Ordering.Infrastructure;
+using QuickCart.Web.Adapters.Ordering;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddOrderingApplication();
 builder.Services.AddOrderingInfrastructure(builder.Configuration);
+builder.Services.AddCatalogInfrastructure(builder.Configuration);
 
+builder.Services.AddScoped<IProductCatalog, CatalogProductAdapter>();
 builder.Services.AddSingleton(TimeProvider.System);
 
 var app = builder.Build();

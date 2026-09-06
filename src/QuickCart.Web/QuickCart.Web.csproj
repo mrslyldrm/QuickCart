@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Modules\Catalog\QuickCart.Catalog.Application\QuickCart.Catalog.Application.csproj" />
+    <ProjectReference Include="..\Modules\Catalog\QuickCart.Catalog.Domain\QuickCart.Catalog.Domain.csproj" />
     <ProjectReference Include="..\Modules\Catalog\QuickCart.Catalog.Infrastructure\QuickCart.Catalog.Infrastructure.csproj" />
     <ProjectReference Include="..\Modules\Inventory\QuickCart.Inventory.Application\QuickCart.Inventory.Application.csproj" />
     <ProjectReference Include="..\Modules\Inventory\QuickCart.Inventory.Infrastructure\QuickCart.Inventory.Infrastructure.csproj" />
